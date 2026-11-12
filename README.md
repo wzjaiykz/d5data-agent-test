@@ -19,6 +19,7 @@ The short version:
   recomputing them. Correct work is zeroed by exact-name table binding, while an
   empty probe gets R9 credit. The score is not a reliable measure of business
   quality.
+- The scorer is not usable as-is: public and effective weights differ, the hash shortcut freezes rewards instead of recomputing, R5/R6 false-negative correct workbooks, and the undisclosed R9 gives an empty shell 1.0 while Gold gets 0.
 
 ## What is in the repository
 
