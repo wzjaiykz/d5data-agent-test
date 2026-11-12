@@ -1,0 +1,53 @@
+﻿SOURCE BASELINE (recomputed from the 36 leaf rows, not Gold)
+period       base -> current   net    continuing / new / closed       breakfast / lunch / dinner
+2023→2024   374 -> 422      +48    +23 (47.9167%) / +89 (185.4167%) / -64 (-133.3333%)    -11 (-22.9167%) / +21 (43.7500%) / +38 (79.1667%)
+2024→2025   422 -> 481      +59    +31 (52.5424%) / +79 (133.8983%) / -51 (-86.4407%)    +1 (1.6949%) / +17 (28.8136%) / +41 (69.4915%)
+
+STATUS 2023→2024: 青禾店=持续经营, 西苑店=持续经营, 星港店=持续经营, 北站店=持续经营, 湖滨店=新开, 客运港店=关闭
+STATUS 2024→2025: 青禾店=持续经营, 西苑店=关闭, 星港店=持续经营, 北站店=持续经营, 湖滨店=持续经营, 云庭店=新开
+
+ROLLOUT SCORES (frozen hash path; effective owner weights, not public weights)
+rollout-01.xlsx frozen=True  stored=0.294424 effective_from_completion=0.294424
+  zeros=['R5', 'R6A', 'R6B', 'R6C', 'R6D', 'R6E']
+  partial={}
+rollout-02.xlsx frozen=True  stored=0.294424 effective_from_completion=0.294424
+  zeros=['R5', 'R6B', 'R6C', 'R6E']
+  partial={}
+rollout-03.xlsx frozen=True  stored=0.944424 effective_from_completion=0.944424
+  zeros=['R5', 'R6C']
+  partial={}
+rollout-04.xlsx frozen=True  stored=0.350000 effective_from_completion=0.350000
+  zeros=['R6B', 'R6C', 'R6E']
+  partial={'R2': 0.947368}
+rollout-05.xlsx frozen=True  stored=1.000000 effective_from_completion=1.000000
+  zeros=[]
+  partial={'R2': 0.947368}
+Gold frozen=True stored=1.0
+
+DECLARED vs EFFECTIVE WEIGHTS
+item   declared   effective
+R1       5.000%     0.000%
+R2       8.000%     0.000%
+R3      18.000%     0.000%
+R4      25.000%    23.449%
+R5      25.000%     5.558%
+R6      10.000%    65.000%
+R7       9.000%     0.000%
+R8       0.000%     0.000%
+R9       0.000%     5.993%
+sum effective = 100.000%
+declared weights = {'R1': 0.05, 'R2': 0.08, 'R3': 0.18, 'R4': 0.25, 'R5': 0.25, 'R6': 0.1, 'R7': 0.09}
+effective weights = {'R4': 0.234493, 'R5': 0.055576, 'R6B': 0.3, 'R6E': 0.35, 'R9': 0.059931}
+
+UNDISCLOSED R9 FORMULA-DEPENDENCY HEURISTIC
+expected_answer.xlsx R9=0.000000 points=[0, 0, 0, 0, 0, 0]
+probe-01.xlsx      R9=0.000000 points=[0, 0, 0, 0, 0, 0]
+probe-02.xlsx      R9=0.000000 points=[0, 0, 0, 0, 0, 0]
+probe-03.xlsx      R9=1.000000 points=[1, 1, 1, 1, 1, 1]
+rollout-01.xlsx    R9=1.000000 points=[1, 1, 1, 1, 1, 1]
+rollout-02.xlsx    R9=1.000000 points=[1, 1, 1, 1, 1, 1]
+rollout-03.xlsx    R9=1.000000 points=[1, 1, 1, 1, 1, 1]
+rollout-04.xlsx    R9=1.000000 points=[1, 1, 1, 1, 1, 1]
+rollout-05.xlsx    R9=1.000000 points=[1, 1, 1, 1, 1, 1]
+
+CHECK OK: source closes, Gold hash is frozen, public/effective weights differ as documented.
